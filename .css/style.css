@@ -352,6 +352,10 @@ body {
   }
 }
 
+.login {
+  position: relative;
+}
+
 .menu__body {
   background-color: white;
 }
@@ -429,6 +433,10 @@ body {
   .menu__item {
     padding: 15px;
   }
+}
+
+.menu__item:hover {
+  border-bottom: 5px solid #ff6600;
 }
 
 @media (max-width: 797px) {
@@ -1091,6 +1099,10 @@ input[type="submit"]:hover {
   }
 }
 
+.shop:hover {
+  text-shadow: 2px 2px 3px #000;
+}
+
 .gallery {
   margin: 30px 40px;
 }
@@ -1100,6 +1112,10 @@ input[type="submit"]:hover {
     margin: 20px 20px;
     text-shadow: 2px 2px 3px #000;
   }
+}
+
+.gallery:hover {
+  text-shadow: 2px 2px 3px #000;
 }
 
 .shoes {
@@ -1193,6 +1209,10 @@ input[type="submit"]:hover {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: -0.3px;
+}
+
+.pack:hover {
+  text-shadow: 2px 2px 3px #000;
 }
 
 @font-face {
