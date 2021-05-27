@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.navAndSocial {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.navAndSocial-container {
+  max-width: 1179px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navAndSocial-leftRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navAndSocial-leftRow__item {
+  color: #868686;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  margin-right: 35px;
+}
+
+.overBottomLogo {
+  width: 60px;
+  height: 60px;
+  background: url(../images/undercover.webp) no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overBottomLogo img {
+  width: 17px;
+  height: 10px;
+}
+
+.bottom-logo img {
+  width: 166px;
+  height: 120px;
+}
+
+.faceBook,
+.twitter,
+.pinterest,
+.instagram {
+  display: block;
+  width: 36px;
+  height: 35px;
+  opacity: 0.3;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faceBook:hover,
+.twitter:hover,
+.pinterest:hover,
+.instagram:hover {
+  border: 2px solid #ff6600;
+}
+
+.logo a svg:hover #facebook,
+.logo a svg:hover #twitter,
+.logo a svg:hover #pinterest,
+.logo a svg:hover #instagram {
+  fill: #ff6600;
+}
+
+.navAndSocial-rightRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navAndSocial-rightRow__item {
+  color: #868686;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: -0.35px;
+  margin-left: 35px;
+}

@@ -1,0 +1,197 @@
+@import "fonts.scss";
+@import "_mixins.scss";
+
+
+.collection {
+  position: relative;
+  top     : -40px;
+  z-index : 10;
+}
+
+.colection-container {
+  max-width: 1179px;
+  margin   : 0 auto;
+  display  : flex;
+  flex-wrap: wrap;
+}
+
+.watch {
+  max-width : 590px;
+  max-height: 400px;
+  background: url('../images/banerBg/allBanerLeft.webp')no-repeat center;
+  flex      : 0 1 50%;
+
+  @media(max-width: 1180px) {
+    flex  : 0 1 100%;
+    order : 1;
+    margin: 0 auto;
+  }
+}
+
+.watch-border {
+  display   : block;
+  max-width : 510px;
+  max-height: 264px;
+  margin    : 48px 40px;
+
+
+
+  .watch-title {
+    max-width    : 226px;
+    color        : #ffffff;
+    font-family  : $Pn;
+    font-size    : 50px;
+    font-weight  : 700;
+    line-height  : 46px;
+    text-align   : left;
+    margin-bottom: 136px;
+    position     : relative;
+    top          : -7px;
+    left         : -7px;
+
+    @media(max-width: 590px) {
+      top: 5px;
+    }
+
+    @media(max-width: 500px) {
+      top : 50px;
+      left: -15px;
+    }
+
+    @media(max-width: 400px) {
+      text-shadow: 2px 2px 3px #000;
+    }
+  }
+
+}
+
+.collection-links {
+  color         : #ffffff;
+  font-family   : $Pn;
+  font-size     : 12px;
+  font-weight   : 700;
+  text-align    : left;
+  text-transform: uppercase;
+  letter-spacing: -0.3px;
+  display       : flex;
+
+  & a {
+    color         : #fff;
+    color         : #ffffff;
+    font-family   : $Pn;
+    font-size     : 12px;
+    font-weight   : 700;
+    text-align    : left;
+    text-transform: uppercase;
+    letter-spacing: -0.3px;
+  }
+}
+
+.shop {
+  margin: 30px 40px;
+
+  @media(max-width: 400px) {
+    margin     : 20px 20px;
+    text-shadow: 2px 2px 3px #000;
+  }
+}
+
+.shop:hover {
+  text-shadow: 2px 2px 3px #000;
+}
+
+.gallery {
+  margin: 30px 40px;
+
+  @media(max-width: 400px) {
+    margin     : 20px 20px;
+    text-shadow: 2px 2px 3px #000;
+  }
+}
+
+.gallery:hover {
+  text-shadow: 2px 2px 3px #000;
+}
+
+.shoes {
+  max-width : 590px;
+  max-height: 400px;
+  background: url('../images/banerBg/allBanerRight.webp')no-repeat center;
+  flex      : 0 1 50%;
+
+  @media(max-width: 1180px) {
+    flex  : 0 1 100%;
+    order : 2;
+    margin: 0 auto;
+  }
+}
+
+.shoes-border {
+  display   : block;
+  max-width : 510px;
+  max-height: 264px;
+  margin    : 48px 40px 0;
+
+}
+
+.shoes-title {
+  max-width    : 226px;
+  color        : #ffffff;
+  font-family  : $Pn;
+  font-size    : 50px;
+  font-weight  : 700;
+  line-height  : 46px;
+  text-align   : left;
+  margin-bottom: 136px;
+  position     : relative;
+  top          : -12px;
+  left         : -7px;
+
+  @media(max-width: 590px) {
+    top: 5px;
+  }
+
+  @media(max-width: 500px) {
+    top : 50px;
+    left: -15px;
+  }
+
+  @media(max-width: 400px) {
+    text-shadow: 2px 2px 3px #000;
+  }
+
+}
+
+.pack {
+  color         : #ffffff;
+  font-family   : $Pn;
+  font-size     : 12px;
+  font-weight   : 700;
+  text-align    : left;
+  text-transform: uppercase;
+  letter-spacing: -0.3px;
+  display       : flex;
+  margin        : 35px 40px;
+  padding-top   : 30px;
+
+  @media(max-width: 400px) {
+    text-shadow: 2px 2px 3px #000;
+  }
+
+  & a {
+    color         : #fff;
+    color         : #ffffff;
+    font-family   : $Pn;
+    font-size     : 12px;
+    font-weight   : 700;
+    text-align    : left;
+    text-transform: uppercase;
+    letter-spacing: -0.3px;
+
+
+  }
+}
+
+.pack:hover {
+  text-shadow: 2px 2px 3px #000;
+}

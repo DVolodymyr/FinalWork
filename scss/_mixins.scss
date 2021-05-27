@@ -1,0 +1,47 @@
+//======================           ADAPTIV FONT           ==========================================
+$maxWidth: 1600;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize : $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+//======================           CENTERING           ==========================================
+@mixin сentering-xy() {
+  position : absolute;
+  left     : 50%;
+  top      : 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin сentering-x() {
+  position : absolute;
+  left     : 50%;
+  transform: translateX(-50%);
+}
+
+@mixin сentering-y() {
+  position : absolute;
+  top      : 50%;
+  transform: translateY(-50%);
+}
+
+//======================          PSEVDO ELEMENTS            ==========================================
+@mixin pseudo-element($content: '', $display: block, $pos: absolute) {
+  content : $content;
+  display : $display;
+  position: $pos;
+  top     : 0;
+  left    : 0;
+}
+
+//======================     Social border circle       ==========================================
+@mixin socialCircle($color) {
+  display        : block;
+  border         : 1px solid $color;
+  border-radius  : 50%;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}

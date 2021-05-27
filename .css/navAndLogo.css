@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.navAndLogo {
+  max-width: 1600px;
+  min-height: 225px;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.navAndLogo-container {
+  max-width: 1179px;
+  min-height: 225px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+@media (max-width: 1300px) {
+  .navAndLogo-container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 575px) {
+  .navAndLogo-container {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.navAndLogo-RowLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1300px) {
+  .navAndLogo-RowLeft {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 575px) {
+  .navAndLogo-RowLeft {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navAndLogo-RowLeft {
+    margin-left: 20px;
+  }
+}
+
+.navAndLogo-RowLeft__item {
+  color: #868686;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: -0.35px;
+  margin-right: 20px;
+}
+
+@media (max-width: 1300px) {
+  .navAndLogo-RowLeft__item {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
+
+.navAndLogo-RowLeft__item:hover {
+  color: #ffffff;
+  letter-spacing: -0.35px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ff6600;
+}
+
+.navAndLogo-RowRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  right: -60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1300px) {
+  .navAndLogo-RowRight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 575px) {
+  .navAndLogo-RowRight {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding-top: 140px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navAndLogo-RowRight {
+    margin-right: 100px;
+  }
+}
+
+.navAndLogo-RowRight__item {
+  color: #868686;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  margin-right: 20px;
+}
+
+@media (max-width: 1300px) {
+  .navAndLogo-RowRight__item {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
+
+.navAndLogo-RowRight__item:hover {
+  color: #ffffff;
+  letter-spacing: -0.35px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ff6600;
+}
+
+.logoAndOverLogo {
+  max-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 42%;
+  top: -30px;
+}
+
+@media (max-width: 380px) {
+  .logoAndOverLogo {
+    left: 32%;
+  }
+}
+
+.overBottomLogo {
+  width: 60px;
+  height: 60px;
+  background: url(../images/undercover.webp) no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -30px;
+  left: 25%;
+}
+
+.overBottomLogo img {
+  width: 17px;
+  height: 10px;
+}
+
+.bottom-logo {
+  position: relative;
+  left: 0;
+  top: 30px;
+}
+
+@media (max-width: 575px) {
+  .bottom-logo {
+    top: 180px;
+  }
+}
+
+.bottom-logo img {
+  width: 166px;
+  height: 120px;
+}

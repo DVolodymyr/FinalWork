@@ -1,0 +1,166 @@
+@import "fonts.scss";
+@import "_mixins.scss";
+
+.navAndLogo {
+  max-width       : 1600px;
+  min-height      : 225px;
+  margin          : 0 auto;
+  background-color: #000;
+
+}
+
+.navAndLogo-container {
+  max-width      : 1179px;
+  min-height     : 225px;
+  margin         : 0 auto;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  text-align     : center;
+  flex-wrap      : wrap;
+  position       : relative;
+
+  @media(max-width: 1300px) {
+    justify-content: space-evenly;
+  }
+
+  @media(max-width: 575px) {
+    display        : block;
+    justify-content: center;
+  }
+
+}
+
+.navAndLogo-RowLeft {
+  display        : flex;
+  justify-content: start;
+  align-items    : center;
+  flex-wrap      : wrap;
+
+  @media(max-width: 1300px) {
+    flex-direction: column;
+  }
+
+  @media(max-width: 575px) {
+    justify-content: center;
+    padding-top    : 30px;
+  }
+
+  @media(max-width: 380px) {
+    margin-left: 20px;
+  }
+
+  &__item {
+    color         : #868686;
+    font-family   : $Pn;
+    font-size     : 14px;
+    font-weight   : 700;
+    text-align    : left;
+    letter-spacing: -0.35px;
+    margin-right  : 20px;
+
+    @media(max-width: 1300px) {
+      font-size : 18px;
+      margin-top: 15px;
+    }
+
+
+  }
+
+  &__item:hover {
+    color         : #ffffff;
+    letter-spacing: -0.35px;
+    padding-bottom: 10px;
+    border-bottom : 1px solid #ff6600;
+  }
+}
+
+.navAndLogo-RowRight {
+  display        : flex;
+  justify-content: end;
+  align-items    : center;
+  position       : relative;
+  right          : -60px;
+  flex-wrap      : wrap;
+
+  @media(max-width: 1300px) {
+    flex-direction: column;
+  }
+
+  @media(max-width: 575px) {
+    justify-content: end;
+    padding-top    : 140px;
+  }
+
+  @media(max-width: 380px) {
+    margin-right: 100px;
+  }
+
+  &__item {
+    color       : #868686;
+    font-family : $Pn;
+    font-size   : 14px;
+    font-weight : 700;
+    text-align  : left;
+    margin-right: 20px;
+
+    @media(max-width: 1300px) {
+      font-size : 18px;
+      margin-top: 15px;
+    }
+  }
+
+  &__item:hover {
+    color         : #ffffff;
+    letter-spacing: -0.35px;
+    padding-bottom: 10px;
+    border-bottom : 1px solid #ff6600;
+  }
+}
+
+.logoAndOverLogo {
+  max-width      : 200px;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  flex-direction : column;
+  position       : absolute;
+  left           : 42%;
+  top            : -30px;
+
+  @media(max-width: 380px) {
+    left: 32%;
+  }
+}
+
+.overBottomLogo {
+  width          : 60px;
+  height         : 60px;
+  background     : url(../images/undercover.webp)no-repeat center;
+  background-size: cover;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  top            : -30px;
+  left           : 25%;
+
+  & img {
+    width : 17px;
+    height: 10px;
+  }
+}
+
+.bottom-logo {
+  position: relative;
+  left    : 0;
+  top     : 30px;
+
+  @media(max-width: 575px) {
+    top: 180px
+  }
+
+  & img {
+    width : 166px;
+    height: 120px;
+  }
+}
