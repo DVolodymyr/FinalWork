@@ -5,7 +5,7 @@ $("document").ready(function () {
     $(".burger, .menu__list").toggleClass("active");
   });
 });
-//======================           LAZU LOADING           ==========================================
+//======================           LAZY LOADING           ==========================================
 const lazyImages = document.querySelectorAll(
   "img[data-src],source[data-srcset]"
 );
@@ -57,71 +57,33 @@ $("a.scroll-to").on("click", function (e) {
       1200
     );
 });
-// //======================          SMOOTH SCROLL            ==========================================
-// const menuLinks = document.querySelectorAll(".menu__item[data-goto]");
-// if (menuLinks.length > 0) {
-//   menuLinks.forEach((menuLink) => {
-//     menuLink.addEventListener("click", onMenuLinkClick);
-//   });
-//   function onMenuLinkClick(e) {
-//     const menuLink = e.target;
-//     if (
-//       menuLink.dataset.goto &&
-//       document.querySelector(menuLink.dataset.goto)
-//     ) {
-//       const gotoBlock = document.querySelector(menuLink.dataset.goto);
-//       const gotoBlockValue =
-//         gotoBlock.getBoundingClientRect().top +
-//         pageYOffset -
-//         document.querySelector("header").offsetHeight;
-//       window.scrollTo({
-//         top: gotoBlockValue,
-//         behavior: "smooth",
-//       });
-//       e.preventDefault();
-//     }
-//   }
-// }
-// //======================           SLIDER SHOP      ==========================================
-// let offset = 0;
-// const shopCarts = document.querySelector(".shopCarts");
-// document
-//   .querySelector(".icon-Arrow-rightB")
-//   .addEventListener("click", function () {
-//     offset += 1284;
-//     if (offset > 2568) {
-//       offset = 0;
-//     }
-//     shopCarts.style.left = -offset + "px";
-//   });
-// document
-//   .querySelector(".icon-Arrow-left")
-//   .addEventListener("click", function () {
-//     offset -= 1284;
-//     if (offset < 0) {
-//       offset = 2568;
-//     }
-//     shopCarts.style.left = -offset + "px";
-//   });
+//======================          SMOOTH SCROLL            ==========================================
+const menuLinks = document.querySelectorAll(".menu__item[data-goto]");
+if (menuLinks.length > 0) {
+  menuLinks.forEach((menuLink) => {
+    menuLink.addEventListener("click", onMenuLinkClick);
+  });
+  function onMenuLinkClick(e) {
+    const menuLink = e.target;
+    if (
+      menuLink.dataset.goto &&
+      document.querySelector(menuLink.dataset.goto)
+    ) {
+      const gotoBlock = document.querySelector(menuLink.dataset.goto);
+      const gotoBlockValue =
+        gotoBlock.getBoundingClientRect().top +
+        pageYOffset -
+        document.querySelector("header").offsetHeight;
+      window.scrollTo({
+        top: gotoBlockValue,
+        behavior: "smooth",
+      });
+      e.preventDefault();
+    }
+  }
+}
 
-// //======================           SLIDER COMENT           ==========================================
-// let offsett = 0;
-// const commentSlide = document.querySelector(".container__content-slider");
-// document.querySelector(".coment-arrowR").addEventListener("click", function () {
-//   offset += 745;
-//   if (offset > 2235) {
-//     offset = 0;
-//   }
-//   commentSlide.style.top = -offset + "px";
-// });
-// document.querySelector(".coment-arrowL").addEventListener("click", function () {
-//   offset -= 745;
-//   if (offset < 0) {
-//     offset = 2235;
-//   }
-//   commentSlide.style.top = -offset + "px";
-// });
-//======================             slick slider         ==========================================
+//======================             SWIPER SLIDER         ==========================================
 var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
@@ -129,3 +91,40 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+//======================           SCROLL ANIMATION            ==========================================
+const animItems = document.querySelectorAll(".anim-items");
+if (animItems.length > 0) {
+  window.addEventListener("scroll", animOnScroll);
+  function animOnScroll() {
+    for (let index = 0; index < animItems.length; index++) {
+      const animItem = animItems[index];
+      const animItemHeight = animItem.offsetHeight;
+      const animItemOffset = offset(animItem).top;
+      const animStart = 4;
+
+      let animItemPoint = window.innerHeight - animItemHeight / animStart;
+      if (animItemHeight > window.innerHeight) {
+        animItemPoint = window.innerHeight - window.innerHeight / animStart;
+      }
+      if (
+        pageYOffset > animItemOffset - animItemPoint &&
+        pageYOffset < animItemOffset + animItemHeight
+      ) {
+        animItem.classList.add("_active", "no-anim");
+      } else {
+        if (!animItem.classList.contains("no-anim")) {
+          animItem.classList.remove("_active");
+        }
+      }
+    }
+    function offset(el) {
+      const rect = el.getBoundingClientRect(),
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
+    }
+  }
+  setTimeout(() => {
+    animOnScroll();
+  }, 300);
+}

@@ -112,6 +112,25 @@
   }
 }
 
+.slide1-title {
+  color      : #ffffff;
+  font-family: $Pn;
+  @include adaptiv-font(80, 55);
+  font-weight: 700;
+  text-align : center;
+  position   : relative;
+  padding    : 30px;
+
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.slide1-title._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
 .slide-title {
   color      : #ffffff;
   font-family: $Pn;
@@ -120,6 +139,26 @@
   text-align : center;
   position   : relative;
   padding    : 30px;
+}
+
+.slide1-subtitle {
+  color      : #ffffff;
+  font-family: $Pn;
+  @include adaptiv-font(20, 14);
+  font-weight   : 400;
+  text-align    : center;
+  letter-spacing: -1px;
+  margin        : 20px auto 90px;
+  text-shadow   : 1px 1px 2px #262626;
+  transform     : translate(0, 120%);
+  opacity       : 0;
+  transition    : all .8s ease 0s;
+}
+
+.slide1-subtitle._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.5s;
 }
 
 .slide-subtitle {
@@ -131,6 +170,46 @@
   letter-spacing: -1px;
   margin        : 20px auto 90px;
   text-shadow   : 1px 1px 2px #262626;
+}
+
+.slide1-btn {
+  width           : 170px;
+  height          : 50px;
+  border          : 2px solid #fff;
+  background-color: transparent;
+  font-family     : $Pn;
+  font-size       : 12px;
+  font-weight     : 700;
+  text-align      : left;
+  text-transform  : uppercase;
+  letter-spacing  : -0.3px;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  margin-bottom   : 475px;
+  text-decoration : none;
+  transition      : .7s ease-in-out 0s;
+  transform       : translate(0, 120%);
+  opacity         : 0;
+  transition      : all .8s ease 0s;
+
+  & a {
+    color: #fff;
+  }
+
+  & .icon-right_smalla {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: #ff6600;
+  }
+}
+
+.slide1-btn._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.9s;
 }
 
 .slide-btn {
@@ -149,7 +228,6 @@
   align-items     : center;
   margin-bottom   : 475px;
   text-decoration : none;
-  transition      : .7s ease-in-out 0s;
 
   & a {
     color: #fff;

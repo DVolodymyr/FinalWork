@@ -14,6 +14,15 @@
   text-align    : center;
   letter-spacing: -2.4px;
   margin        : 110px auto 10px;
+
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.blog-title._active {
+  transform: translate(0, 0);
+  opacity  : 1;
 }
 
 .blog-subtitle {
@@ -25,6 +34,15 @@
   text-align    : center;
   letter-spacing: -1px;
   margin-bottom : 90px;
+  transform     : translate(0, 120%);
+  opacity       : 0;
+  transition    : all .8s ease 0s;
+}
+
+.blog-subtitle._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.5s;
 }
 
 .blog-gallery {
@@ -42,25 +60,72 @@
 }
 
 .div1 {
-  grid-area: 1 / 1 / 3 / 3;
+  background: url(../images/VAyR.gif)center/ 50px no-repeat;
+  grid-area : 1 / 1 / 3 / 3;
+
+  transform : translate(-120%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.div1._active {
+  transform: translate(0, 0);
+  opacity  : 1;
 }
 
 .div2 {
   background: url(../images/body-block_imgs/bbiW.webp)no-repeat center;
   grid-area : 1 / 3 / 2 / 4;
+  transform : translate(-120%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.div2._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.3s;
 }
 
 .div3 {
-  grid-area: 1 / 4 / 2 / 5;
+  background: url(../images/VAyR.gif)center/ 50px no-repeat;
+  grid-area : 1 / 4 / 2 / 5;
+  transform : translate(0, -120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.div3._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.4s;
 }
 
 .div4 {
-  grid-area: 2 / 3 / 3 / 4;
+  grid-area : 2 / 3 / 3 / 4;
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.div4._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.4s;
 }
 
 .div5 {
   background: url(../images/body-block_imgs/bbiW.webp)no-repeat center;
   grid-area : 2 / 4 / 3 / 5;
+  transform : translate(120%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.div5._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.4s;
 }
 
 @media(max-width: 1179px) {
