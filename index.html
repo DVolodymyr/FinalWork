@@ -14,7 +14,7 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" id="header">
         <div class="header-floors">
           <div class="header-floors__container">
             <div class="header-logo">
@@ -73,7 +73,7 @@
       </header>
       <main class="main">
         <div class="main-content">
-          <section class="main-slider ">
+          <section class="main-slider">
             <div class="main-slider__container swiper-container mySwiper">
               <div class="slides swiper-wrapper">
                 <div class="slide1 swiper-slide">
@@ -253,7 +253,9 @@
               </div>
               <div class="logoAndOverLogo">
                 <div class="overBottomLogo">
-                  <img src="./images/tempSVG/arrowUP.webp" alt="">
+                  <a href="#header" class="scroll-to">
+                  <img src="./images/tempSVG/arrowUP.webp" alt="arrowUp">
+                  </a>
                 </div>
                 <div class="bottom-logo">
                   <img src="./images/logos/bottomLogo.webp" alt="logo">
@@ -322,9 +324,10 @@
       </footer>
     </div>
     <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    ></script>
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>

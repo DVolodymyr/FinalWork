@@ -5,43 +5,58 @@ $("document").ready(function () {
     $(".burger, .menu__list").toggleClass("active");
   });
 });
-//======================          TABS            ==========================================
-// function openTab(tabName) {
-//   const tab = document.getElementById(tabName);
-//   const tabs = document.getElementsByClassName(`tabs__block`);
-//   for (let i = 0; i < tabs.length; i++) {
-//     tabs[i].classList.remove(`active`);
-//   }
-//   tab.classList.add(`active`);
-// }
-// //======================           ACORDION          =======================================
-// let acc = document.getElementsByClassName("accordion");
-// let i;
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function () {
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//       panel.style.display = "none";
-//     } else {
-//       panel.style.display = "block";
-//     }
-//   });
-// }
-// //======================      SMOOTH SCROLL ARROW       ==========================================
+//======================           LAZU LOADING           ==========================================
+const lazyImages = document.querySelectorAll(
+  "img[data-src],source[data-srcset]"
+);
+const loadMapBlock = document.querySelector("_load-map");
+const windowHeight = document.documentElement.clientHeight;
+let lazyImagesPosition = [];
+if (lazyImages.length > 0) {
+  lazyImages.forEach((img) => {
+    if (img.dataset.src || img.dataset.srcset) {
+      lazyImagesPosition.push(img.getBoundingClientRect().top + pageYOffset);
+      lazyScrollCheck();
+    }
+  });
+}
+window.addEventListener("scroll", lazyScroll);
+function lazyScroll() {
+  if (
+    document.querySelectorAll("img[data-src],source[data-srcset]").length > 0
+  ) {
+    lazyScrollCheck();
+  }
+}
+function lazyScrollCheck() {
+  let imgIndex = lazyImagesPosition.findIndex(
+    (item) => pageYOffset > item - windowHeight
+  );
+  if (imgIndex >= 0) {
+    if (lazyImages[imgIndex].dataset.src) {
+      lazyImages[imgIndex].src = lazyImages[imgIndex].dataset.src;
+      lazyImages[imgIndex].removeAttribute("data-src");
+    } else if (lazyImages[imgIndex].dataset.srcset) {
+      lazyImages[imgIndex].srcset = lazyImages[imgIndex].dataset.srcset;
+      lazyImages[imgIndex].removeAttribute("data-srcset");
+    }
+    delete lazyImagesPosition[imgIndex];
+  }
+}
+//======================      SMOOTH SCROLL ARROW       ==========================================
 
-// $("a.scroll-to").on("click", function (e) {
-//   e.preventDefault();
-//   let anchor = $(this).attr("href");
-//   $("html, body")
-//     .stop()
-//     .animate(
-//       {
-//         scrollTop: $(anchor).offset().top,
-//       },
-//       800
-//     );
-// });
+$("a.scroll-to").on("click", function (e) {
+  e.preventDefault();
+  let anchor = $(this).attr("href");
+  $("html, body")
+    .stop()
+    .animate(
+      {
+        scrollTop: $(anchor).offset().top,
+      },
+      1200
+    );
+});
 // //======================          SMOOTH SCROLL            ==========================================
 // const menuLinks = document.querySelectorAll(".menu__item[data-goto]");
 // if (menuLinks.length > 0) {

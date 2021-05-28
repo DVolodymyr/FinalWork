@@ -229,6 +229,7 @@
 .overBottomLogo img {
   width: 17px;
   height: 10px;
+  cursor: pointer;
 }
 
 .bottom-logo {

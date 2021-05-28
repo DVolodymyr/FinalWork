@@ -1,0 +1,14 @@
+@import 'fonts.scss';
+
+.btn {
+  width           : 188px;
+  height          : 75px;
+  color           : #000;
+  font-family     : $Pn;
+  font-size       : 18px;
+  font-weight     : 700;
+  line-height     : 75px;
+  text-align      : center;
+  text-transform  : uppercase;
+  background-color: #fc7c27;
+}

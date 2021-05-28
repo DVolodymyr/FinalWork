@@ -197,7 +197,6 @@ body {
 }
 
 .header {
-  height: 100%;
   max-width: 1600px;
   margin: 0 auto;
   position: relative;
@@ -2501,4 +2500,103 @@ img {
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 150px;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"), url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.new-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.new-title {
+  color: #1c1c1b;
+  text-shadow: 2px 2px 3px #ff6600;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin: 80px auto;
+  padding: 30px 20px;
+}
+
+.new-shop__cards {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0 30px;
+  grid-auto-columns: calc(34% - 30px);
+  grid-auto-flow: column;
+  position: relative;
+  left: 0;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.card-img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.shopPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 75px;
+  border: 1px solid #e1e1e1;
+  background-color: #f1f1f1;
+}
+
+.shopPrice__price {
+  width: 100%;
+  color: #1c1c1b;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 75px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  margin-left: 30px;
+}
+
+.shopPrice__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding-right: 50px;
+  position: relative;
 }
