@@ -45,11 +45,25 @@
                 <div class="menu__body__container">
                   <ul class="menu__list">
                     <li><a href="./new.html" class="menu__item">New</a></li>
-                    <li><a href="#" class="menu__item">Men</a></li>
-                    <li><a href="#" class="menu__item">Women</a></li>
-                    <li><a href="#" class="menu__item">Sale</a></li>
-                    <li><a href="#" class="menu__item">Blog</a></li>
-                    <li><a href="#" class="menu__item">Contact</a></li>
+                    <li>
+                      <a data-goto=".men" href="#" class="menu__item">Men</a>
+                    </li>
+                    <li>
+                      <a data-goto=".women" href="#" class="menu__item"
+                        >Women</a
+                      >
+                    </li>
+                    <li>
+                      <a data-goto=".sale" href="#" class="menu__item">Sale</a>
+                    </li>
+                    <li>
+                      <a data-goto=".blog" href="#" class="menu__item">Blog</a>
+                    </li>
+                    <li>
+                      <a data-goto=".contact" href="#" class="menu__item"
+                        >Contact</a
+                      >
+                    </li>
                   </ul>
                   <div id="wrap">
                     <form action="" autocomplete="on">
@@ -202,7 +216,7 @@
               </div>
             </div>
           </section>
-          <section class="blog">
+          <section class="blog blog" id="blog">
             <div class="blog-container">
               <div class="blog-title anim-items">From the Blog</div>
               <div class="blog-subtitle anim-items">
