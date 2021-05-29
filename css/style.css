@@ -2445,4 +2445,37 @@ img {
   transition: all 0.8s ease 0.7s;
 }
 
+.social-container {
+  transform: scale(0);
+}
+
+.social-container._active {
+  transform: scale(1);
+  transition: all 0.8s ease 0s;
+}
+
+.copyright {
+  transform: translate(0, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.copyright._active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 0.8s ease 0s;
+}
+
+.shop-cards__body {
+  transform: translate(0, 120%);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.shop-cards__body._active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+}
+
 /*# sourceMappingURL=style.css.map */
