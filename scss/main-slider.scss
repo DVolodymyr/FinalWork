@@ -120,15 +120,6 @@
   text-align : center;
   position   : relative;
   padding    : 30px;
-
-  transform : translate(0, 120%);
-  opacity   : 0;
-  transition: all .8s ease 0s;
-}
-
-.slide1-title._active {
-  transform: translate(0, 0);
-  opacity  : 1;
 }
 
 .slide-title {
@@ -189,9 +180,6 @@
   margin-bottom   : 475px;
   text-decoration : none;
   transition      : .7s ease-in-out 0s;
-  transform       : translate(0, 120%);
-  opacity         : 0;
-  transition      : all .8s ease 0s;
 
   & a {
     color: #fff;
@@ -204,12 +192,6 @@
   &:hover {
     background-color: #ff6600;
   }
-}
-
-.slide1-btn._active {
-  transform : translate(0, 0);
-  opacity   : 1;
-  transition: all .8s ease 0.9s;
 }
 
 .slide-btn {

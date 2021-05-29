@@ -37,11 +37,6 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
-  -webkit-transform: translate(-200%, 0);
-          transform: translate(-200%, 0);
-  opacity: 0;
-  -webkit-transition: all .8s ease 0s;
-  transition: all .8s ease 0s;
 }
 
 @media (max-width: 1180px) {
@@ -54,12 +49,6 @@
             order: 1;
     margin: 0 auto;
   }
-}
-
-.watch._active {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
 }
 
 .watch-border {
@@ -163,11 +152,6 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
-  -webkit-transform: translate(200%, 0);
-          transform: translate(200%, 0);
-  opacity: 0;
-  -webkit-transition: all .8s ease 0.3s;
-  transition: all .8s ease 0.3s;
 }
 
 @media (max-width: 1180px) {
@@ -180,12 +164,6 @@
             order: 2;
     margin: 0 auto;
   }
-}
-
-.shoes._active {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
 }
 
 .shoes-border {

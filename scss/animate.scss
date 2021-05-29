@@ -1,0 +1,210 @@
+@import "fonts.scss";
+@import "_mixins.scss";
+
+//======================           MAIN SLIDER           ==========================================
+.slide1-title {
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.slide1-title._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
+.slide1-btn {
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.slide1-btn._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.6s;
+}
+
+//======================           CILLECTION           ==========================================
+.watch {
+  transform : translate(-200%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.watch._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
+.shoes {
+  transform : translate(200%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0.3s;
+}
+
+.shoes._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
+//======================           BLOG           ==========================================
+.blog-title {
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.blog-title._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
+.blog-subtitle {
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.blog-subtitle._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.5s;
+}
+
+.div1 {
+  transform : translate(-120%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.div1._active {
+  transform: translate(0, 0);
+  opacity  : 1;
+}
+
+.div2 {
+  transform : translate(-120%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.div2._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.3s;
+}
+
+.div3 {
+  transform : translate(0, -120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.div3._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.4s;
+}
+
+.div4 {
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.div4._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.4s;
+}
+
+.div5 {
+  transform : translate(120%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.div5._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.4s;
+}
+
+//======================           BLOG-SEQUEL           ==========================================
+.div6,
+.div7 {
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .5s ease 0s;
+}
+
+.div6._active,
+.div7._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8 ease 0s;
+}
+
+.div8,
+.div9 {
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.div8._active,
+.div9._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.4s;
+}
+
+.div10 {
+  transform: scale(0);
+}
+
+.div10._active {
+  transform : scale(1);
+  transition: all .5s ease .3s;
+}
+
+//======================           BLOG-SEQUEL2           ==========================================
+.div11,
+.div12 {}
+
+.div11._active,
+.div12._active {}
+
+.div13,
+.div14 {}
+
+.div13._active,
+.div14._active {}
+
+.div15 {}
+
+.div15._active {}
+
+//======================           BLOG-SEQUEL3          ==========================================
+.div16,
+.div17 {}
+
+.div16._active,
+.div17._active {}
+
+.div18,
+.div19 {}
+
+.div18._active,
+.div19._active {}
+
+.div20 {}
+
+.div20._active {}
+
+.blog-sequel3__btn {}
+
+.blog-sequel3__btn._active {}
+
+//======================                      ==========================================
