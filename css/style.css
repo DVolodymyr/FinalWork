@@ -2317,4 +2317,132 @@ img {
   transition: all 0.5s ease 0.3s;
 }
 
+.div11 {
+  transform: scale(0);
+}
+
+.div11._active {
+  transform: scale(1);
+  transition: all 0.8s ease 0.3s;
+}
+
+.div12,
+.div13 {
+  transform: translate(120%, 0);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.div12._active,
+.div13._active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+
+.div14,
+.div15 {
+  transform: translate(120%, 0);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.div14._active,
+.div15._active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 0.8s ease 0.5s;
+}
+
+.div16,
+.div17 {
+  transform: scale(0);
+}
+
+.div16._active,
+.div17._active {
+  transform: scale(1);
+  transition: all 0.8s ease 0.3s;
+}
+
+.div18,
+.div19 {
+  transform: scale(0);
+}
+
+.div18._active,
+.div19._active {
+  transform: scale(1);
+  transition: all 0.8s ease 0.3s;
+}
+
+.div20 {
+  transform: translate(0, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.div20._active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+
+.blog-sequel3__btn {
+  transform: translate(0, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.blog-sequel3__btn._active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 0.8s ease 0s;
+}
+
+.logos-container {
+  transform: translate(0, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.logos-container._active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 0.8s ease 0s;
+}
+
+.navAndLogo-RowLeft {
+  transform: translate(-120%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.navAndLogo-RowLeft._active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 0.8s ease 0.3s;
+}
+
+.logoAndOverLogo {
+  transform: scale(0);
+}
+
+.logoAndOverLogo._active {
+  transform: scale(1);
+  transition: all 0.8s ease 0s;
+}
+
+.navAndLogo-RowRight {
+  transform: translate(120%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.navAndLogo-RowRight._active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 0.8s ease 0.7s;
+}
+
 /*# sourceMappingURL=style.css.map */

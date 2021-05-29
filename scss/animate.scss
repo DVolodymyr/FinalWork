@@ -170,41 +170,135 @@
 }
 
 //======================           BLOG-SEQUEL2           ==========================================
-.div11,
-.div12 {}
+.div11 {
+  transform: scale(0);
+}
 
-.div11._active,
-.div12._active {}
+.div11._active {
+  transform : scale(1);
+  transition: all .8s ease .3s;
+}
 
-.div13,
-.div14 {}
+.div12,
+.div13 {
+  transform : translate(120%, 0);
+  opacity   : 0;
+  transition: all .5s ease 0s;
+}
 
-.div13._active,
-.div14._active {}
+.div12._active,
+.div13._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.4s;
+}
 
-.div15 {}
+.div14,
+.div15 {
+  transform : translate(120%, 0);
+  opacity   : 0;
+  transition: all .5s ease 0s;
+}
 
-.div15._active {}
+.div14._active,
+.div15._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.5s;
+}
+
 
 //======================           BLOG-SEQUEL3          ==========================================
 .div16,
-.div17 {}
+.div17 {
+  transform: scale(0);
+}
 
 .div16._active,
-.div17._active {}
+.div17._active {
+  transform : scale(1);
+  transition: all .8s ease .3s;
+}
 
 .div18,
-.div19 {}
+.div19 {
+  transform: scale(0);
+}
 
 .div18._active,
-.div19._active {}
+.div19._active {
+  transform : scale(1);
+  transition: all .8s ease .3s;
+}
 
-.div20 {}
+.div20 {
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
 
-.div20._active {}
+.div20._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.4s;
+}
 
-.blog-sequel3__btn {}
+.blog-sequel3__btn {
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
 
-.blog-sequel3__btn._active {}
+.blog-sequel3__btn._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0s;
+}
 
-//======================                      ==========================================
+//======================         LOGOTYPES             ==========================================
+.logos-container {
+  transform : translate(0, 120%);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.logos-container._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0s;
+}
+
+//======================           NAV AND LOGO         ==========================================
+.navAndLogo-RowLeft {
+  transform : translate(-120%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.navAndLogo-RowLeft._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.3s;
+}
+
+.logoAndOverLogo {
+  transform: scale(0);
+}
+
+.logoAndOverLogo._active {
+  transform : scale(1);
+  transition: all .8s ease 0s;
+
+}
+
+.navAndLogo-RowRight {
+  transform : translate(120%, 0);
+  opacity   : 0;
+  transition: all .8s ease 0s;
+}
+
+.navAndLogo-RowRight._active {
+  transform : translate(0, 0);
+  opacity   : 1;
+  transition: all .8s ease 0.7s;
+}
