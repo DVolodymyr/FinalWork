@@ -198,7 +198,7 @@ body {
   align-items: center;
   background-color: #fc7c27;
   position: absolute;
-  top: 0;
+  top: 1;
   left: 0;
 }
 @media (min-width: 1600px) {
@@ -362,6 +362,7 @@ body {
   }
 }
 .menu__item:hover {
+  padding-bottom: 0;
   border-bottom: 5px solid #ff6600;
 }
 @media (max-width: 797px) {
@@ -521,6 +522,7 @@ input[type=submit]:hover {
   display: block;
   height: 100%;
   border-left: 1px solid #ebebeb;
+  cursor: pointer;
 }
 @media (max-width: 992px) {
   .basket {
@@ -570,6 +572,7 @@ input[type=submit]:hover {
 }
 
 .basket span {
+  display: none;
   color: #ffffff;
   font-family: "ProximaNova", sans-serif;
   font-size: 11px;
@@ -1702,7 +1705,7 @@ img {
     margin-left: 20px;
   }
 }
-.navAndLogo-RowLeft__item {
+.navAndLogo-RowLeft__item a {
   color: #868686;
   font-family: "ProximaNova", sans-serif;
   font-size: 14px;
@@ -1710,18 +1713,18 @@ img {
   text-align: left;
   letter-spacing: -0.35px;
   margin-right: 20px;
+  text-decoration: none;
 }
 @media (max-width: 1300px) {
-  .navAndLogo-RowLeft__item {
+  .navAndLogo-RowLeft__item a {
     font-size: 18px;
     margin-top: 15px;
   }
 }
-.navAndLogo-RowLeft__item:hover {
+.navAndLogo-RowLeft__item a:hover {
   color: #ffffff;
   letter-spacing: -0.35px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ff6600;
+  border-bottom: 2px solid #ff6600;
 }
 
 .navAndLogo-RowRight {
@@ -1766,8 +1769,7 @@ img {
 .navAndLogo-RowRight__item:hover {
   color: #ffffff;
   letter-spacing: -0.35px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ff6600;
+  border-bottom: 2px solid #ff6600;
 }
 
 .logoAndOverLogo {

@@ -53,29 +53,28 @@
     margin-left: 20px;
   }
 
-  &__item {
-    color         : #868686;
-    font-family   : $Pn;
-    font-size     : 14px;
-    font-weight   : 700;
-    text-align    : left;
-    letter-spacing: -0.35px;
-    margin-right  : 20px;
+  &__item a {
+    color          : #868686;
+    font-family    : $Pn;
+    font-size      : 14px;
+    font-weight    : 700;
+    text-align     : left;
+    letter-spacing : -0.35px;
+    margin-right   : 20px;
+    text-decoration: none;
 
     @media(max-width: 1300px) {
       font-size : 18px;
       margin-top: 15px;
     }
-
-
   }
 
-  &__item:hover {
+  &__item a:hover {
     color         : #ffffff;
     letter-spacing: -0.35px;
-    padding-bottom: 10px;
-    border-bottom : 1px solid #ff6600;
+    border-bottom : 2px solid #ff6600;
   }
+
 }
 
 .navAndLogo-RowRight {
@@ -117,8 +116,7 @@
   &__item:hover {
     color         : #ffffff;
     letter-spacing: -0.35px;
-    padding-bottom: 10px;
-    border-bottom : 1px solid #ff6600;
+    border-bottom : 2px solid #ff6600;
   }
 }
 

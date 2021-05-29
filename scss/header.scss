@@ -23,7 +23,7 @@
   align-items     : center;
   background-color: #fc7c27;
   position        : absolute;
-  top             : 0;
+  top             : 1;
   left            : 0;
 
   @media(min-width: 1600px) {
@@ -187,7 +187,8 @@
     }
 
     &:hover {
-      border-bottom: 5px solid #ff6600;
+      padding-bottom: 0;
+      border-bottom : 5px solid #ff6600;
     }
 
   }
@@ -348,6 +349,7 @@ input[type="submit"]:hover {
   display    : block;
   height     : 100%;
   border-left: 1px solid #ebebeb;
+  cursor     : pointer;
 
   @media(max-width: 992px) {
     padding: 30px 50px 30px 20px;
@@ -390,6 +392,7 @@ input[type="submit"]:hover {
 }
 
 .basket span {
+  display         : none;
   color           : #ffffff;
   font-family     : $Pn;
   font-size       : 11px;
