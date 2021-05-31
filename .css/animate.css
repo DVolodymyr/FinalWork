@@ -160,8 +160,8 @@
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   opacity: 1;
-  -webkit-transition: all .8s ease 0.4s;
-  transition: all .8s ease 0.4s;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
 }
 
 .div5 {

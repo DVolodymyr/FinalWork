@@ -1,0 +1,33 @@
+@import "fonts.scss";
+@import '_mixins.scss';
+@import 'btn.scss';
+
+
+.men-container {
+  max-width: 1600px;
+  margin   : 0 auto;
+}
+
+.men-title {
+  color      : #1c1c1b;
+  text-shadow: 2px 2px 3px #ff6600;
+  font-family: $Pn;
+  @include adaptiv-font(100, 35);
+  font-weight   : 700;
+  line-height   : 75px;
+  text-align    : center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin        : 80px auto;
+  padding       : 30px 20px;
+}
+
+.men-shop {
+
+  &__cards {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-wrap      : wrap;
+  }
+}

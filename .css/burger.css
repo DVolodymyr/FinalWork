@@ -86,7 +86,7 @@
   .burger.active::before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: 14px;
+    top: 18px;
   }
 }
 
@@ -100,7 +100,7 @@
   .burger.active::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    bottom: 12px;
+    bottom: 16px;
   }
 }
 

@@ -58,7 +58,7 @@
 
   .burger.active::before {
     transform: rotate(45deg);
-    top      : 14px;
+    top      : 18px;
 
     @media(max-width: 420px) {
       bottom: 18px;
@@ -68,7 +68,7 @@
 
   .burger.active::after {
     transform: rotate(-45deg);
-    bottom   : 12px;
+    bottom   : 16px;
 
     @media(max-width: 420px) {
       bottom: 15px;

@@ -85,7 +85,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 30px;
-    margin-left: 15px;
+    margin-left: 22px;
   }
 }
 
@@ -222,7 +222,7 @@
 
 @media (max-width: 585px) {
   .logoAndOverLogo {
-    left: 36%;
+    left: 35%;
   }
 }
 
@@ -271,7 +271,7 @@
 
 @media (max-width: 585px) {
   .bottom-logo {
-    top: 180px;
+    top: 110px;
   }
 }
 
