@@ -3,12 +3,12 @@
 @import 'btn.scss';
 
 
-.men-container {
+.watches-container {
   max-width: 1600px;
   margin   : 0 auto;
 }
 
-.men-title {
+.watches-title {
   color      : #1c1c1b;
   text-shadow: 2px 2px 3px #ff6600;
   font-family: $Pn;
@@ -22,7 +22,7 @@
   padding       : 30px 20px;
 }
 
-.men-shop {
+.watches-shop {
 
   &__cards {
     display        : flex;

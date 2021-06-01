@@ -43,12 +43,12 @@
   background-color: #fc7c27;
 }
 
-.women-container {
+.watches-container {
   max-width: 1600px;
   margin: 0 auto;
 }
 
-.women-title {
+.watches-title {
   color: #1c1c1b;
   text-shadow: 2px 2px 3px #ff6600;
   font-family: "ProximaNova", sans-serif;
@@ -62,7 +62,7 @@
   padding: 30px 20px;
 }
 
-.women-shop__cards {
+.watches-shop__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
